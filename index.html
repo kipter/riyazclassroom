@@ -25,11 +25,99 @@
       defer
     ></script>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital@1&display=swap");
+
       body {
         font-family: Arial, sans-serif;
         background-color: #f9f9f9;
         margin: 0;
         padding: 0;
+      }
+
+      .wrapper {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.5);
+      }
+
+      #header {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .about-page {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .left-side {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .right-side {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #pic {
+        width: 300px;
+        border-radius: 30px;
+      }
+
+      @media screen and (max-width: 609px) {
+        .about-page {
+          flex-direction: column-reverse;
+        }
+
+        #pic {
+          width: 250px;
+        }
+        .left-side {
+          width: 100%;
+          height: 300px;
+        }
+        .right-side {
+          width: 100%;
+          height: 300px;
+        }
+      }
+
+      @media screen and (max-width: 420px) {
+        .about-page {
+          flex-direction: column-reverse;
+        }
+
+        #pic {
+          width: 180px;
+        }
+        .left-side {
+          width: 100%;
+          height: 300px;
+        }
+        .right-side {
+          width: 100%;
+          height: 300px;
+        }
       }
 
       .container {
